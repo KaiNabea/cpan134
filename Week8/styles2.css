@@ -10,19 +10,21 @@ footer {
     background-color: #f1f1f1;
     padding: 10px;
     font-size: 0.9em;
+    clear: both;
 }
-/*Multi-column layout*/
-main {
-    display:flex;
-    gap: 15px; /*Space between columns*/
-    padding: 20px;
-}
+/*Multi-column layout using floats*/
 .column {
-    flex: 1; /*Equal width for each column*/
+    width: 30%;
+    float: left;
+    margin: 10px 1.5%;
     background-color: #e9ecef;
     padding: 20px;
-    margin: 10px 1.5%;
-    border: 1px solid #ced4da;
+    border: 2px solid #ced4da;
     border-radius: 5px;
     box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1); /*Adding shadow for depth*/
+}
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
 }
