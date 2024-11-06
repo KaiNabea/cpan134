@@ -1,0 +1,29 @@
+<html>
+<head>
+</head>
+<body>
+    <p id="firstParagraph">This is going to be a placeholder.</p>
+    <div class="header">Header</div>
+    <div class="sidebar">Sidebar</div>
+    <div class="main-content">Main Content</div>
+    <a href = 'https://www.humber.ca'>Humber College</a>
+    <div class="footer">Footer</div>
+    <script>
+        let greeting = 'Hello World';
+        let grade = 99;
+        let price = 19.99;
+        let isPassing = true;
+        let response = null;
+        console.log(greeting, grade, price, isPassing, response)
+        var x = 10;
+        if(isPassing = true) {
+            var x = 5;
+            console.log(x)
+        }
+        console.log(x)
+        document.getElementById("firstParagraph").innerHTML = 'This is now updated after the change.'
+        document.getElementsByClassName('header')[0].innerHTML = 'Header updated.'
+        document.getElementsByTagName('a')[0].href = document.getElementsByTagName('a')[0].href + "/search/full-time.html"
+    </script>
+</body>
+</html>
