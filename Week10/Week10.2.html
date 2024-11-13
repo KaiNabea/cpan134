@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            WEEK 10: JAVASCRIPT ARRAYS & DATATYPES
+        </title>
+    </head>
+    <body>
+        <script>
+            var x = "CPAN134";
+            var grade;
+            console.log(typeof grade);
+            grade = 78;
+            console.log(typeof grade);
+            grade = "78";
+            console.log(typeof grade);
+            grade = true;
+            console.log(typeof grade);
+            grade = null;
+            console.log(typeof grade);
+            var isComplete = true;
+            var anotherVariable = null;
+            var unassignedVar;
+            let age = 18;
+            if (age >= 18) {
+                console.log("You are an adult.")
+            } else if (age >= 14) {
+                console.log("You are between 14 and 18.")
+            } else if (age >= 10) {
+                console.log("You are between 10 and 14.")
+            } else {
+                console.log("You are under 10.")
+            }
+            let i = 5;
+            while (i < 5) {
+                console.log(i);
+                i++
+            };
+            for (var k = 5; k < 5; k++) {
+                console.log(k)
+            }
+            let j = 5;
+            do {
+                console.log(j);
+                j++
+            } while (j < 5);
+            let day = 3;
+            switch (day) {
+                case 1:
+                    console.log("Monday");
+                    break;
+                case 2:
+                    console.log("Tuesday");
+                    break;
+                case 3:
+                    console.log("Wednesday");
+                    break;
+                default:
+                    console.log("Other day");
+            }
+            if (day == 1) {
+                console.log("Monday")
+            } else if (day == 2) {
+                console.log("Tuesday")
+            } else if (day == 3) {
+                console.log("Wednesday")
+            } else {
+                console.log("Other day")
+            }
+        </script>
+    </body>
+</html>

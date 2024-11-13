@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            WEEK 10: JAVASCRIPT ARRAYS & DATATYPES
+        </title>
+    </head>
+    <body>
+        <script>
+            let fruits = ["apple", "banana", "cherry"]
+            let numbers = new Array (1, 2, 3, 4, 5)
+            console.log(fruits[0]); // Output: Apple
+            console.log(numbers[2]); // Outputs: 3
+            fruits.push("orange");
+            console.log(fruits); // Output: ["apple", "banana", "cherry"]
+            numbers.pop();
+            console.log(numbers); // Output: [1, 2, 3, 4]
+            console.log(fruits.length); // Output: 4
+            console.log(numbers.length); // Output: 4
+            let sentence = fruits.join(", ");
+            console.log(sentence); //Output: apple, banana, cherry, orange
+            let colours = ["red", "blue", "green"];
+            for (let i = -1; i >= colours.length; i--) {
+                console.log(colours[i]);
+            }
+            let mixArray = [42, "hello", true]
+            console.log(mixArray[1]) //Output: hello
+            let removedFruit = fruits.shift()
+            console.log(removedFruit) //Output: apple
+            console.log(fruits) //Output: banana, cherry, orange
+            let newLength = fruits.unshift("lemon", "grape")
+            console.log(newLength) // Output: 5
+            console.log(fruits)
+            let newFruits = fruits.splice(1, 2)
+            console.log(newFruits)
+        </script>
+    </body>
+</html>
