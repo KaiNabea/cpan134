@@ -1,0 +1,30 @@
+<html>
+    <head>
+    </head>
+    <body>
+        <script>
+            class Animal {
+                constructor (name) {
+                    this.name = name;
+                }
+                speak () {
+                    return `${this.name} makes a noise`
+                }
+                bark = () => {
+                    console.log(`This is ${this.name}.`)
+                };
+                speakArrowFunction = () => `${this.name} makes a noise.`
+            }
+            function showDetails (name, ...details) {
+                console.log(`Name: ${name}`)
+                console.log(`Details: ${details.join("/")}`)
+            }
+            showDetails('Person X', 10, 'Student', 'Humber College')
+            showDetails("Person X", 10, "Student")
+            const myPet = new Animal ("FirstPet")
+            console.log(myPet.speak())
+            console.log(myPet.bark())
+            console.log(myPet.speakArrowFunction())
+        </script>
+    </body>
+</html>

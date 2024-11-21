@@ -1,0 +1,27 @@
+<html>
+    <head>
+        <title>
+        </title>
+    </head>
+    <body>
+        <script>
+            function greet (name) {
+                return `Hello, ${name}`;
+            }
+            console.log(greet("Alice"))
+            const add = function (a, b) {
+                return a + b;
+            }
+            console.log(add(3, 5))
+            const person = {
+                name: "John",
+                age: 30,
+                greet: function() {
+                    return `Hello, my name is ${this.name}`
+                }
+            }
+            console.log(person)
+            console.log(person.greet())
+        </script>
+    </body>
+</html>

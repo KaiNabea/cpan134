@@ -1,0 +1,18 @@
+<html>
+    <head>
+    </head>
+    <body>
+        <script>
+            localStorage.setItem("username", "Alice")
+            const username = localStorage.getItem("username")
+            localStorage.removeItem("username")
+            const user = {
+                name: "John",
+                age: 30
+            }
+            localStorage.setItem("john", JSON.stringify(user))
+            const retrievedUser = JSON.parse(localStorage.getItem("john"))
+            console.log(retrievedUser.name)
+        </script>
+    </body>
+</html>
