@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Assignment 2
+        </title>
+        <style>
+            h1 {
+                font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                font-style: italic;
+                color: darkslategray;
+                border: 8px solid navy;
+                padding: 1em;
+            }
+            ul {
+                border: 2px solid navy;
+                padding: 2em;
+            }
+            li {
+                font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                color: darkslategray;
+            }
+            body {
+                background-color: plum;
+            }
+            div {
+                width: auto;
+                padding: 1em;
+                margin: 5% 0;
+                border: 2px solid navy;
+            }
+            button {
+                font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            }
+        </style>
+    </head>
+    <body id = "page" onload = "onLoad ()">
+        <h1>
+            ASSIGNMENT 2
+        </h1>
+        <ul id = "uList">
+            <li>
+                First Item
+            </li>
+            <li>
+                Second Item
+            </li>
+                <li>
+                Third Item
+            </li>
+        </ul>
+        <div id = "divider" onmouseenter = "changeBackground ()" onmouseleave = "resetBackground ()" onclick = "changeBorder ()">
+            <button id = "buttonID" onclick = "onClick ()">Click Me!</button>
+        </div>
+        <script src = "script.js"></script>
+    </body>
+</html>
