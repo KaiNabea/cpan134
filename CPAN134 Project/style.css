@@ -35,7 +35,7 @@ h1 {
     text-align: center;
     background-image: linear-gradient(90deg, rgba(128, 128, 128, 0.315), rgba(0, 0, 0, 0.171));
 }
-h2 {
+h2, h3 {
     color: white;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
@@ -43,6 +43,11 @@ p {
     color: white;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     width: 50%;
+}
+main {
+    color: white;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    width: 85%;
 }
 table {
     border-collapse: collapse;
